@@ -69,7 +69,7 @@ python -m pip install tensorflow-metal
 ### Step 4: Install dependencies
 We will be using TensorFlow for our ML framework: https://www.tensorflow.org
 
-Run the following command (in the directory) to install dependencies:
+Run the following command (in the directory) sequentially to install dependencies:
 ```sh
 conda install numpy pandas matplotlib
 conda install -c conda-forge tensorflow pillow
@@ -84,7 +84,7 @@ We will use the Stanford Cars Dataset: http://ai.stanford.edu/~jkrause/cars/car_
 >
 >*4th IEEE Workshop on 3D Representation and Recognition, at ICCV 2013 (3dRR-13). Sydney, Australia. Dec. 8, r013.*
 
-run the following commands:
+run all of the following commands sequentially:
 ```sh
 mkdir data
 cd data

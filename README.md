@@ -45,7 +45,7 @@ source deactivate
 ```
 ---
 # **IMPORTANT: From now on, make sure you activate your conda envrironment**
----
+
 ### Step 3 (Only for MacOS): Set Up Apple Metal
 
 If you are using MacOS, we recommend using Apple Metal to enhance training using your GPU on Intel Macs or GPU cores on the new Apple Silicon: https://developer.apple.com/metal/tensorflow-plugin/

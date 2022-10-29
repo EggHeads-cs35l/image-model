@@ -88,13 +88,22 @@ run all of the following commands sequentially:
 ```sh
 mkdir data
 cd data
-mkdir images
-curl http://ai.stanford.edu/~jkrause/car196/car_ims.tgz > car_ims.tgz
-curl http://ai.stanford.edu/~jkrause/car196/cars_annos.mat > cars_annos.mat
+curl http://ai.stanford.edu/~jkrause/car196/car_ims.tgz > images.tgz
+curl http://ai.stanford.edu/~jkrause/car196/cars_annos.mat > info.mat
 tar -xzf car_ims.tgz -C images/
 ```
 
-### Step 6: Sanitize your commits
+### Step 6: Organize data
+We will create directories used later now so we don't accidentally create redundant directories
+run all of the following commands in the terminal (in this repo's directory):
+```sh
+cd data
+mkdir dataset
+cd dataset
+mkdir {0..195}
+```
+
+### Step 7: Sanitize your commits
 To prevent from committing outputs of Jupyter code blocks run the following command:
 ```sh
 git config filter.strip-notebook-output.clean 'jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR'

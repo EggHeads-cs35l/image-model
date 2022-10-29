@@ -94,4 +94,10 @@ curl http://ai.stanford.edu/~jkrause/car196/cars_annos.mat > cars_annos.mat
 tar -xzf car_ims.tgz -C images/
 ```
 
+### Step 6: Sanitize your commits
+To prevent from committing outputs of Jupyter code blocks run the following command:
+```sh
+git config filter.strip-notebook-output.clean 'jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR'
+```
+
 ### Now you are ready to develop!

@@ -26,7 +26,7 @@
                           "name": "resizing",
                           "trainable": true,
                           "dtype": "float32",
-                          "height": 224
+                          "height": 224,
                           "width": 224,
                           "interpolation": "bilinear",
                           "crop_to_aspect_ratio": false

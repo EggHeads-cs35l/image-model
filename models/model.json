@@ -28,7 +28,7 @@
                           "dtype": "float32",
                           "height": 180,
                           "width": 180,
-                          "interpolation": "bicubic",
+                          "interpolation": "bilinear",
                           "crop_to_aspect_ratio": false
                       }
                   },
